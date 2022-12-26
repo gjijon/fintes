@@ -19,7 +19,7 @@ public class SampleResource {
   private String message;
 
   @GET
-  @Produces(MediaType.TEXT_PLAIN)
+  @Produces(MediaType.APPLICATION_JSON)
   @Path("{nombre}")
   public Response message(
 		  @DefaultValue("SIN NOMBRE ESPECIFICADO")

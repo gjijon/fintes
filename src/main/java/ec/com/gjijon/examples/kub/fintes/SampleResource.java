@@ -26,7 +26,8 @@ public class SampleResource {
 		  @PathParam("nombre")
 		  String nombre) {
 	  System.out.printf("Parametro de llegada: %s", nombre);
-    return Response.ok(message + nombre).build();
+	  RetornoDTO rdto = new RetornoDTO(nombre);
+    return Response.ok(rdto).build();
   }
 
 }
